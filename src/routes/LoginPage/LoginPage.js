@@ -13,6 +13,8 @@ export default class LoginPage extends Component {
   handleLoginSuccess = () => {
     const { location, history } = this.props
     const destination = (location.state || {}).from || '/'
+
+    // this is connected to the prvivateroute.js
     history.push(destination)
   }
 

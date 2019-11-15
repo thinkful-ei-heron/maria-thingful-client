@@ -9,6 +9,7 @@ import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage'
 import './App.css'
+import TokenService from '../../services/token-service'
 
 class App extends Component {
   state = { hasError: false }
@@ -32,9 +33,11 @@ class App extends Component {
               path={'/'}
               component={ThingListPage}
             />
+           
             <PublicOnlyRoute
               path={'/login'}
               component={LoginPage}
+              // to see component go to PrivateRoute.js
             />
             <PublicOnlyRoute
               path={'/register'}

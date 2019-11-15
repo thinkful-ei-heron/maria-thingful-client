@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "thingful-app-maria",
+    "routes": [
+        {
+          "src": "^/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": ".*",
+          "dest": "/index.html"
+        }
+    ]
+  }
